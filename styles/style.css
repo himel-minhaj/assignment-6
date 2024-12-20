@@ -1,0 +1,10 @@
+.active{
+  background-color: red;
+  color: white;
+}
+#spinner {
+      display: none;
+      width: 40px;
+      height: 40px;
+    }
+    /* <p>${pet.breed}</p> */

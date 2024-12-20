@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peddy Adoption Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/497165ce68.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <header class=" w-11/12 mx-auto mt-3">
+    <nav class="flex justify-between">
+      <div class="logo flex justify-center items-center gap-2 text-lg font-bold">
+        <img src="./images/logo.webp" alt="">
+        <p>Peddy</p>
+      </div>
+      <div class="flex gap-5 hidden lg:flex">
+        <p class="text-lg font-bold text-gray-400">Home</p>
+        <p class="text-lg font-bold text-gray-400">Show</p>
+        <p class="text-lg font-bold text-gray-400">Contact</p>
+      </div>
+      <div class="icon"><i class="fa-solid fa-user size-5 p-5 flex justify-center items-center border rounded-full"></i>
+      </div>
+    </nav>
+
+    <!-- banner section  -->
+    <section class="mt-5">
+      <div class="text-center mx-auto w-6/12">
+        <h4 class="text-gray-400 font-semibold">Bringing Families Together ❤️‍🔥</h4>
+        <h1 class="font-bold text-5xl my-4">Your Path to Adoption Starts Here</h1>
+        <p class="text-gray-400">It is a long established fact that a reader will be distracted by the readable content
+          of a page when looking
+          at its
+          layout. The point of using Lorem Ipsum is that it has a.</p>
+        <button class="btn bg-[#0e7a81] my-5 " onclick="loadAllPets()">View More</button>
+        <div class="mb-5">
+          <img src="./images/pet.webp" alt="">
+        </div>
+        <div>
+          <h1 class="font-bold text-5xl my-4">Adopt Your Best Friend</h1>
+          <p class="mb-4 text-xl text-gray-500">Adopt a pets through CDPA and give them a second chance at life! We
+            rescue cats from
+            all over Dublin and
+            further afield.</p>
+        </div>
+      </div>
+    </section>
+  </header>
+  <nav id="categoryies-cointainer" class="py-3 flex gap-5 justify-between  w-11/12 mx-auto mt-3"></nav>
+  <!-- Best Deal For you -->
+  <section>
+    <div class="flex w-11/12 mx-auto justify-between items-center my-5">
+      <h1 class="text-lg font-bold">Best Deal For you</h1>
+      <button id="sortByPrice" class="btn bg-[#0e7a81]">Sort by Price</button>
+    </div>
+  </section>
+  <!-- spinner  -->
+  <section class="flex justify-center items-center my-2">
+    <span id="spinner" class="loading loading-spinner text-error size-5"></span>
+  </section>
+
+  <main>
+    <section id="all-animel" class="w-11/12 mx-auto  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-10">
+      <div id="all-pet" class="border col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      </div>
+      <div id="like-cointainer" class="p-1 mt-2 border grid grid-cols-2 auto-rows-min gap-2">
+
+      </div>
+    </section>
+  </main>
+  <!-- modul  -->
+  <!-- Open the modal using ID.showModal() method -->
+  <button id="showModulData" class="btn hidden" onclick="customModul.showModal()">open modal</button>
+  <dialog id="customModul" class="modal modal-bottom sm:modal-middle">
+    <div class="modal-box">
+      <div id="modul-content" class="">
+
+      </div>
+      <div class="modal-action">
+        <form method="dialog">
+          <!-- if there is a button in form, it will close the modal -->
+          <button class="btn">Close</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+  <!-- modul  -->
+
+
+
+  <footer class="">
+    <div class="footer bg-neutral text-neutral-content p-10">
+      <nav>
+        <div class="logo flex justify-center items-center gap-2 text-lg font-bold">
+          <img src="./images/logo.webp" alt="">
+          <p>Peddy</p>
+        </div>
+        <h6 class="footer-title">Location: Dhaka Uttara</h6>
+        <a class="link link-hover">Phone: 01864002201</a>
+        <a class="link link-hover">Email: himelminhajul@gmail.com</a>
+        <a class="link link-hover">Openings hours: 9.00 AM - 5.00 PM</a>
+        <div class="flex gap-5">
+          <img src="./images/Group 2.png" alt=""><img src="./images/x-2 1.png" alt=""><img src="./images/Group 7.png"
+            alt=""><img src="./images/Group 6.png" alt="">
+        </div>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Useful Links</h6>
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">About Us</a>
+        <a class="link link-hover">Animals</a>
+        <a class="link link-hover">Foundation</a>
+        <a class="link link-hover">Contact</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Drop a Message</h6>
+        <input class="p-2 rounded-lg" type="text" placeholder="Enter your email">
+        <button class="bg-[#0e7a81] btn px-6">Subscribe</button>
+      </nav>
+    </div>
+  </footer>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
